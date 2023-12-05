@@ -5,7 +5,7 @@
     <classes>
       <class name="QualiAssignmentTestcases.RegisterAndLoginWithSameCreds">
         <methods>
-          <include name="RegisterWithValidCredsAndLoginWithSameCreds"/>
+          <include name="RegisterWithValidCreds"/>
           <include name="InitExentReport"/>
           <include name="generateReports"/>
           <include name="SetUp"/>

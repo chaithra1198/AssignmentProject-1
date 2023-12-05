@@ -9,7 +9,7 @@ public class SuccessRegistrationpageLocators {
 	
 	WebDriver driver;
 	
-	@FindBy(xpath="/html/body/div[2]/div/div/h1")
+	@FindBy(xpath="//h1[contains(text(),'Your Account Has Been Created!')]")
 	private WebElement AccountCreationSuccesMsg;
 
 	public SuccessRegistrationpageLocators(WebDriver driver) 

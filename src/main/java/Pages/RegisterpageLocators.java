@@ -28,7 +28,7 @@ public class RegisterpageLocators {
    @FindBy(id="input-confirm")
    private WebElement EnterPasswordConfirm;
    
-   @FindBy(xpath="(//input[@value='1'])[2]")
+   @FindBy(xpath = "//*[@id='content']/form/div/div/input[1]")
    private WebElement ClickOnPrivacypolicyCheckBox;
    
    @FindBy(xpath="//input[@value='Continue']")
@@ -70,26 +70,29 @@ public class RegisterpageLocators {
    }
    public void LastNameField()
    {
-	   EnterInputlastnameField.sendKeys("qualitrix");
+	   EnterInputlastnameField.sendKeys("Assighment");
    }
-   public String EmailField(String EmailID)
+   public String EmailField(String EmailId)
    {
-	   EnterEmail.sendKeys(EmailID);
-	return EmailID;
+	   EnterEmail.sendKeys(EmailId);
+	return EmailId;
 	   
-   }
+	
+	}
    public void TelephoneField()
    {
 	   EnterTelephone.sendKeys("9876543231");
    }
-   public String PasswordField(String PWD)
+   public String PasswordField(String Password)
    {
-	   EnterPassword.sendKeys(PWD);
-	return PWD;
+	   EnterPassword.sendKeys(Password);
+	return Password;
+	
    }
-   public void ConfirmpasswordField()
+   public String ConfirmpasswordField(String Password)
    {
-	   EnterPasswordConfirm.sendKeys("1234");
+	   EnterPasswordConfirm.sendKeys(Password);
+	return Password;
    }
    
    public void ClickOnContinueButton()

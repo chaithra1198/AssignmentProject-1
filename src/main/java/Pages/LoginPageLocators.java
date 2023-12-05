@@ -54,6 +54,9 @@ public class LoginPageLocators {
 	@FindBy(linkText = "Subscribe / unsubscribe to newsletter")
 	private WebElement validatingSubscribeunsubscribetonewsletter;
 	
+	@FindBy(linkText = "Logout")
+	private WebElement logoutbutton;
+	
 
 	
 	public void EnterInputEmail(String emailid)
@@ -135,6 +138,10 @@ public class LoginPageLocators {
 	{
 		String validatingSubscribeunsubscribetonewsletterText=validatingSubscribeunsubscribetonewsletter.getText();
 		return validatingSubscribeunsubscribetonewsletterText;
+	}
+	public void logoutbutton()
+	{
+		logoutbutton.click();
 	}
 	
 	
