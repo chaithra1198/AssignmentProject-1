@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-05T18:57:05 IST" name="Default suite" finished-at="2023-12-05T18:57:20 IST" duration-ms="15633">
+  <suite started-at="2023-12-05T20:22:05 IST" name="Suite" finished-at="2023-12-05T20:22:32 IST" duration-ms="26606">
     <groups>
     </groups>
-    <test started-at="2023-12-05T18:57:05 IST" name="Default test" finished-at="2023-12-05T18:57:20 IST" duration-ms="15633">
+    <test started-at="2023-12-05T20:22:05 IST" name="Test" finished-at="2023-12-05T20:22:32 IST" duration-ms="26606">
       <class name="QualiAssignmentTestcases.RegisterAndLoginWithSameCreds">
-        <test-method is-config="true" signature="InitExentReport()[pri:0, instance:QualiAssignmentTestcases.RegisterAndLoginWithSameCreds@f5ac9e4]" started-at="2023-12-05T18:57:04 IST" name="InitExentReport" finished-at="2023-12-05T18:57:05 IST" duration-ms="276" status="PASS">
+        <test-method is-config="true" signature="InitExentReport()[pri:0, instance:QualiAssignmentTestcases.RegisterAndLoginWithSameCreds@123ef382]" started-at="2023-12-05T20:22:05 IST" name="InitExentReport" finished-at="2023-12-05T20:22:05 IST" duration-ms="208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitExentReport -->
-        <test-method is-config="true" signature="getnameMethod(org.testng.ITestContext)[pri:0, instance:QualiAssignmentTestcases.RegisterAndLoginWithSameCreds@f5ac9e4]" started-at="2023-12-05T18:57:05 IST" name="getnameMethod" finished-at="2023-12-05T18:57:05 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="getnameMethod(org.testng.ITestContext)[pri:0, instance:QualiAssignmentTestcases.RegisterAndLoginWithSameCreds@123ef382]" started-at="2023-12-05T20:22:05 IST" name="getnameMethod" finished-at="2023-12-05T20:22:05 IST" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@9679750]]>
+                <![CDATA[org.testng.TestRunner@3bf54172]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getnameMethod -->
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:QualiAssignmentTestcases.RegisterAndLoginWithSameCreds@f5ac9e4]" started-at="2023-12-05T18:57:05 IST" name="SetUp" finished-at="2023-12-05T18:57:12 IST" duration-ms="7761" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:QualiAssignmentTestcases.RegisterAndLoginWithSameCreds@123ef382]" started-at="2023-12-05T20:22:05 IST" name="SetUp" finished-at="2023-12-05T20:22:13 IST" duration-ms="7901" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="CheckErrorMessageswithNullFields()[pri:1, instance:QualiAssignmentTestcases.RegisterAndLoginWithSameCreds@f5ac9e4]" started-at="2023-12-05T18:57:12 IST" name="CheckErrorMessageswithNullFields" finished-at="2023-12-05T18:57:14 IST" duration-ms="1891" status="PASS">
+        <test-method signature="CheckErrorMessageswithNullFields()[pri:1, instance:QualiAssignmentTestcases.RegisterAndLoginWithSameCreds@123ef382]" started-at="2023-12-05T20:22:13 IST" name="CheckErrorMessageswithNullFields" finished-at="2023-12-05T20:22:15 IST" duration-ms="1726" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckErrorMessageswithNullFields -->
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:QualiAssignmentTestcases.RegisterAndLoginWithSameCreds@f5ac9e4]" started-at="2023-12-05T18:57:14 IST" name="SetUp" finished-at="2023-12-05T18:57:20 IST" duration-ms="5930" status="PASS">
+        <test-method is-config="true" signature="TocloseTheBrwoser()[pri:0, instance:QualiAssignmentTestcases.RegisterAndLoginWithSameCreds@123ef382]" started-at="2023-12-05T20:22:15 IST" name="TocloseTheBrwoser" finished-at="2023-12-05T20:22:15 IST" duration-ms="171" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method is-config="true" signature="generateStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:QualiAssignmentTestcases.RegisterAndLoginWithSameCreds@f5ac9e4]" started-at="2023-12-05T18:57:20 IST" name="generateStatus" finished-at="2023-12-05T18:57:20 IST" duration-ms="12" status="PASS">
+        </test-method> <!-- TocloseTheBrwoser -->
+        <test-method is-config="true" signature="generateStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:QualiAssignmentTestcases.RegisterAndLoginWithSameCreds@123ef382]" started-at="2023-12-05T20:22:15 IST" name="generateStatus" finished-at="2023-12-05T20:22:15 IST" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -43,18 +43,76 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name=CheckErrorMessageswithNullFields status=SUCCESS method=RegisterAndLoginWithSameCreds.CheckErrorMessageswithNullFields()[pri:1, instance:QualiAssignmentTestcases.RegisterAndLoginWithSameCreds@f5ac9e4] output={null}]]]>
+                <![CDATA[[TestResult name=CheckErrorMessageswithNullFields status=SUCCESS method=RegisterAndLoginWithSameCreds.CheckErrorMessageswithNullFields()[pri:1, instance:QualiAssignmentTestcases.RegisterAndLoginWithSameCreds@123ef382] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateStatus -->
-        <test-method is-config="true" signature="generateReports()[pri:0, instance:QualiAssignmentTestcases.RegisterAndLoginWithSameCreds@f5ac9e4]" started-at="2023-12-05T18:57:20 IST" name="generateReports" finished-at="2023-12-05T18:57:21 IST" duration-ms="704" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:QualiAssignmentTestcases.RegisterAndLoginWithSameCreds@123ef382]" started-at="2023-12-05T20:22:15 IST" name="SetUp" finished-at="2023-12-05T20:22:20 IST" duration-ms="5071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="RegisterWithValidCreds()[pri:2, instance:QualiAssignmentTestcases.RegisterAndLoginWithSameCreds@123ef382]" started-at="2023-12-05T20:22:20 IST" name="RegisterWithValidCreds" finished-at="2023-12-05T20:22:24 IST" duration-ms="4508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterWithValidCreds -->
+        <test-method is-config="true" signature="TocloseTheBrwoser()[pri:0, instance:QualiAssignmentTestcases.RegisterAndLoginWithSameCreds@123ef382]" started-at="2023-12-05T20:22:24 IST" name="TocloseTheBrwoser" finished-at="2023-12-05T20:22:25 IST" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TocloseTheBrwoser -->
+        <test-method is-config="true" signature="generateStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:QualiAssignmentTestcases.RegisterAndLoginWithSameCreds@123ef382]" started-at="2023-12-05T20:22:25 IST" name="generateStatus" finished-at="2023-12-05T20:22:25 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void QualiAssignmentTestcases.RegisterAndLoginWithSameCreds.RegisterWithValidCreds()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=RegisterWithValidCreds status=SUCCESS method=RegisterAndLoginWithSameCreds.RegisterWithValidCreds()[pri:2, instance:QualiAssignmentTestcases.RegisterAndLoginWithSameCreds@123ef382] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateStatus -->
+        <test-method is-config="true" signature="generateReports()[pri:0, instance:QualiAssignmentTestcases.RegisterAndLoginWithSameCreds@123ef382]" started-at="2023-12-05T20:22:32 IST" name="generateReports" finished-at="2023-12-05T20:22:32 IST" duration-ms="590" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReports -->
       </class> <!-- QualiAssignmentTestcases.RegisterAndLoginWithSameCreds -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="QualiAssignmentTestcases.LoginTestCases">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:QualiAssignmentTestcases.LoginTestCases@47af7f3d]" started-at="2023-12-05T20:22:25 IST" name="setUp" finished-at="2023-12-05T20:22:30 IST" duration-ms="5511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginWithValidCredentials()[pri:1, instance:QualiAssignmentTestcases.LoginTestCases@47af7f3d]" started-at="2023-12-05T20:22:30 IST" name="LoginWithValidCredentials" finished-at="2023-12-05T20:22:31 IST" duration-ms="1250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithValidCredentials -->
+        <test-method is-config="true" signature="SetUpToCloseTheBrowser()[pri:0, instance:QualiAssignmentTestcases.LoginTestCases@47af7f3d]" started-at="2023-12-05T20:22:31 IST" name="SetUpToCloseTheBrowser" finished-at="2023-12-05T20:22:32 IST" duration-ms="212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUpToCloseTheBrowser -->
+        <test-method is-config="true" signature="generateStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:QualiAssignmentTestcases.LoginTestCases@47af7f3d]" started-at="2023-12-05T20:22:32 IST" name="generateStatus" finished-at="2023-12-05T20:22:32 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void QualiAssignmentTestcases.LoginTestCases.LoginWithValidCredentials()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=LoginWithValidCredentials status=SUCCESS method=LoginTestCases.LoginWithValidCredentials()[pri:1, instance:QualiAssignmentTestcases.LoginTestCases@47af7f3d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateStatus -->
+      </class> <!-- QualiAssignmentTestcases.LoginTestCases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

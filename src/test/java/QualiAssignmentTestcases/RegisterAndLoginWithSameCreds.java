@@ -28,10 +28,10 @@ public class RegisterAndLoginWithSameCreds extends BaseAss1 {
 	}
 
 	@AfterMethod
-	/*public void TocloseTheBrwoser()
+	public void TocloseTheBrwoser()
 	{
 		driver.quit();
-	}*/
+	}
 
 	@BeforeMethod
 	public void SetUp()
@@ -39,12 +39,12 @@ public class RegisterAndLoginWithSameCreds extends BaseAss1 {
 		driver=ToInitializetheBrowserAndLaunchTheURL(prop.getProperty("BrowserName"));
 		Homepagelocators homepage=new Homepagelocators(driver);
 		homepage.ClickonMyAccountbutton();
-		
+
 	}
 	@Test(priority=1)
 	public void CheckErrorMessageswithNullFields()
 	{
-		
+
 		RegisterpageLocators regpage=new RegisterpageLocators(driver);
 		Homepagelocators homepage=new Homepagelocators(driver);
 		homepage.ClickOnRegisterButton();
@@ -78,42 +78,37 @@ public class RegisterAndLoginWithSameCreds extends BaseAss1 {
 	{
 		Homepagelocators homepage=new Homepagelocators(driver);
 		homepage.ClickOnRegisterButton();
-		
+
 		RegisterpageLocators regpage=new RegisterpageLocators(driver);
-	    regpage.FirstNameField();
+		regpage.FirstNameField();
 		regpage.LastNameField();
 		Random randomstring=new Random();//class to generate dynamic emailand pwd
 		EmailId=regpage.EmailField("chaithra"+randomstring.nextInt()+"@gmail.com");
 		System.out.println("My register account emailid is "+ EmailId);
 		Password=regpage.PasswordField("123"+randomstring.nextInt());
 		System.out.println("My register account Password is "+ Password);
-	    //regpage.EmailField(EmailId);
 		regpage.TelephoneField();
-		//regpage.PasswordField(Password);
 		regpage.ConfirmpasswordField(Password);
 		regpage.ClickOnPrivacypolicyCheckBox();
 		regpage.ClickOnContinueButton(); 
-	     SuccessRegistrationpageLocators sucessreg=new SuccessRegistrationpageLocators(driver);
+		SuccessRegistrationpageLocators sucessreg=new SuccessRegistrationpageLocators(driver);
 		String ActualAccountSuccesRegMsg=sucessreg.accountCreationSuccessMsg();
 		String ExpectedAccountSuccessMsg="Your Account Has Been Created!";
 		Assert.assertEquals(ActualAccountSuccesRegMsg,ExpectedAccountSuccessMsg);//registered successfully
-		
+
 		Homepagelocators homepage1=new Homepagelocators(driver);
 		LoginPageLocators logpage=new LoginPageLocators(driver);
 		logpage.logoutbutton();
-		//homepage1.ClickonMyAccountbutton(); // To login with same email first need to logout
-		//homepage1.ClickOnLogoutbutton();
 		homepage1.ClickonMyAccountbutton();
 		homepage1.ClickOnLoginButton();
-		
-	    logpage.EnterInputEmail(EmailId);
+		logpage.EnterInputEmail(EmailId);
 		logpage.EnterInputPassword(Password);
 		logpage.ClickOnLoginbutton();
 		String actualEditinfoMsg=logpage.CheckEditYourAccInfoText();
 		String expectedEditinfoMsg="Edit your account information";
 		AssertJUnit.assertEquals(actualEditinfoMsg, expectedEditinfoMsg);
 		System.out.println("Edit your account information link is Displayed");
-		}
+	}
 
 }
 
